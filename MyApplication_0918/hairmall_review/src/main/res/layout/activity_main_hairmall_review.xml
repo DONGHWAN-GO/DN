@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="4"
+            android:scaleType="centerInside"
+            android:src="@drawable/profile_s" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            android:textSize="10pt"
+            android:textColor="#000"
+            android:text="고동환"/>
+
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="none"
+        android:hint="리뷰를 달아주세요:)"
+        android:privateImeOptions="defaultInputmode=korean"
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="14"
+        android:gravity="top"
+        >
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textSize="10pt"
+                android:textColor="#000"
+                android:text="코드 헤어"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textSize="10pt"
+                android:textColor="#000"
+                android:text="4.4"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textSize="10pt"
+                android:textColor="#000"
+                android:text="숏컷"/>
+
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="13"
+        android:gravity="top"
+        android:orientation="horizontal">
+
+        <TableRow>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="4"
+                android:scaleType="centerInside"
+                android:src="@drawable/review_image1" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="4"
+                android:scaleType="centerInside"
+                android:src="@drawable/review_image2" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="4"
+                android:scaleType="centerInside"
+                android:src="@drawable/review_image3" />
+
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="10pt"
+        android:textColor="#000"
+        android:background="#E21E80"
+        android:text="리뷰달기"/>
+
+
+</LinearLayout>

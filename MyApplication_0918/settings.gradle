@@ -1,0 +1,2 @@
+include ':app', ':lab02', ':lab03', ':lab04', ':hairmall_login', ':hailmall_join_rule', ':hairmall_review', ':hairmall_tag'
+rootProject.name='MyApplication_0918'
