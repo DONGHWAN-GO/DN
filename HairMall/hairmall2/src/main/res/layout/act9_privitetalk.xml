@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="20"
+    >
+
+
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="19.8"
+        android:weightSum="20">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="18.5"
+            android:layout_margin="10dp">
+
+            <!-- 민정 -->
+            <ImageView
+                android:id="@+id/female"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/female"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/female"
+                android:layout_toRightOf="@+id/female"
+                android:paddingLeft="5dp"
+                android:gravity="top"
+                android:text="사장님"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/mmt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/female"
+                android:layout_toRightOf="@id/female"
+                android:background="#FF94B8"
+                android:layout_marginLeft="5dp"
+
+                android:padding="5dp"
+                android:text="안녕하세요 고객님, 무엇을 도와드릴까요?"
+                android:textSize="18dp"/>
+
+
+
+
+            <!-- 한목 -->
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/hh"
+                android:src="@drawable/male2"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/female"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/hh"
+                android:layout_toLeftOf="@id/hh"
+                android:id="@+id/username"
+                android:paddingRight="5dp"
+                android:gravity="top"
+                android:text="이한목"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/hht"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_below="@id/username"
+                android:layout_toLeftOf="@id/hh"
+                android:layout_marginRight="5dp"
+
+                android:background="#FF94B8"
+                android:padding="10dp"
+                android:text="이 헤어스타일  하고싶은데 내일 혹시 예약 가능할까요?  "
+                android:textSize="19dp"/>
+<!-- owner ment -->
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/owner2"
+                android:src="@drawable/female"
+                android:layout_marginTop="50dp"
+
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/hh"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/owner2"
+                android:layout_toRightOf="@id/owner2"
+                android:id="@+id/owner2name"
+                android:paddingRight="5dp"
+                android:gravity="top"
+                android:text="사장님"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/owner2ment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/owner2name"
+                android:layout_toRightOf="@id/owner2"
+                android:layout_marginRight="5dp"
+
+                android:background="#FF94B8"
+                android:padding="10dp"
+                android:text="가능합니다. 몇시로 도와드릴까요?  "
+                android:textSize="19dp"/>
+
+
+            <!-- 다시-->
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/hhh"
+                android:src="@drawable/male2"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/owner2ment"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/hhh"
+                android:layout_toLeftOf="@id/hhh"
+                android:id="@+id/username2"
+                android:paddingRight="5dp"
+                android:gravity="top"
+                android:text="이한목"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/hhment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/username2"
+                android:layout_toLeftOf="@id/hhh"
+                android:layout_marginRight="5dp"
+
+                android:background="#FF94B8"
+                android:padding="10dp"
+                android:text="내일 오후 4시 반으로 부탁드려요"
+                android:textSize="19dp"/>
+            <!-- owner ment -->
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/owner3"
+                android:src="@drawable/female"
+                android:layout_marginTop="20dp"
+
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/hhment"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/owner3"
+                android:layout_toRightOf="@id/owner3"
+                android:id="@+id/owner3name"
+                android:paddingRight="5dp"
+                android:gravity="top"
+                android:text="사장님"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/owner3ment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/owner3name"
+                android:layout_toRightOf="@id/owner3"
+                android:layout_marginRight="5dp"
+
+                android:background="#FF94B8"
+                android:padding="10dp"
+                android:text="네, 고객님 15일 4시 30분으로 예약 되셨니다. 좋은하루 되세요."
+                android:textSize="19dp"/>
+
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:weightSum="11">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/pp"/>
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border_bright"
+                    android:layout_weight="9.5"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:orientation="vertical"> # padding은 center로 바꾸기
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/login_icon_small" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="none"
+        android:hint="hair mall 아이디"/> # width margin 남기도록 조절
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="none"
+        android:hint="비밀번호는 6자 이상~20자 이하"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF94B8"
+        android:text="로그인"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:orientation="horizontal"
+        > # margin 남기기
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="자동 로그인"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right">
+
+            <Button
+                android:id="@+id/btn_login_id_find"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FF94B8"
+                android:text="아이디 찾기"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="  "/>
+
+            <Button
+                android:id="@+id/btn_login_pw_find"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FF94B8"
+                android:text="비밀번호 찾기"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="50dp"
+        >
+
+        <Button
+            android:id="@+id/btn_login_join"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FF94B8"
+            android:text="회원가입 >"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="  "/>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
