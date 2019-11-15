@@ -80,25 +80,35 @@ public class act3_login extends AppCompatActivity {
         edit_login_pw.setText("");
     }
 
+
     public void IsExistPw(){
+        id = edit_login_id.getText().toString();
+        pw = edit_login_pw.getText().toString();
+
         Log.d("DEBUG","DEBUG1 : ");
         childRef = mRootRef.child("hairmall").child("users").child(id).child("pw");
         Log.d("DEBUG","DEBUG2 : ");
         childRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                Log.d("DEBUG","DEBUG3 : ");
                 realpw = dataSnapshot.getValue(String.class);
-                Log.d("getFirebaseDatabaes","realpw : " + realpw);
+                if(IsExistId()){
+                    Log.d("getFirebaseDatabaes","DEBUG : " + IsExistpw);
+                    if(pw.equals(realpw)){
 
-                if (pw.equals(realpw)){
-                    Log.d("getFirebaseDatabaes","realpw : " + realpw + "true");
-                    IsExistpw = true;
-                    Log.d("getFirebaseDatabaes","IsExistpw1 : " + IsExistpw +"?");
+                        setIdAllActivity();
+                        setEditBlank();
+                        Intent intent = new Intent(act3_login.this, number2.class);
+                        intent.putExtra("id", id);
+                        startActivity(intent);
+                    }else{
+                        Toast.makeText(act3_login.this, "비밀번호가 일치하지 않습니다.",Toast.LENGTH_LONG).show();
+                        setEditBlank();
+                    }
+
                 }else{
-                    Log.d("getFirebaseDatabaes","realpw : " + "q" + realpw + "q" + "false");
-                    Log.d("getFirebaseDatabaes","pw : " + "q" + pw + "q" + "false");
-                    IsExistpw = false;
+                    Toast.makeText(act3_login.this, "존재하지 않는 아이디 입니다.",Toast.LENGTH_LONG).show();
+                    setEditBlank();
                 }
             }
 
@@ -107,8 +117,9 @@ public class act3_login extends AppCompatActivity {
                 Log.w("Tag", "Failed to read value.", databaseError.toException());
             }
         });
-
     }
+
+
 
     public void getFirebaseDatabase(){
         childRef = mRootRef.child("hairmall").child("users");
@@ -159,32 +170,26 @@ public class act3_login extends AppCompatActivity {
             public void onClick(View v){
                 switch (v.getId()){
                     case R.id.btn_login_login:
+                        IsExistPw();
 
-                        id = edit_login_id.getText().toString();
-                        pw = edit_login_pw.getText().toString();
+                        break;
 
-                        if(IsExistId()){
-                            IsExistPw();
-                           Log.d("getFirebaseDatabaes","IsExistpw2 : " + IsExistpw +"?");
+                }
 
-                            if(true){ //  나중에 고침
+            }
 
-                                setIdAllActivity();
-                                setEditBlank();
-                                Intent intent = new Intent(act3_login.this, number2.class);
-                                intent.putExtra("id", id);
-                                startActivity(intent);
-                            }else{
-                                Toast.makeText(act3_login.this, "비밀번호가 일치하지 않습니다.",Toast.LENGTH_LONG).show();
-                                setEditBlank();
-                            }
+        });
 
+        btn_login_join.setOnClickListener(new View.OnClickListener(){
 
+            @Override
+            public void onClick(View v){
+                switch (v.getId()){
+                    case R.id.btn_login_join:
 
-                        }else{
-                            Toast.makeText(act3_login.this, "존재하지 않는 아이디 입니다.",Toast.LENGTH_LONG).show();
-                            setEditBlank();
-                        }
+                        Intent intent = new Intent(act3_login.this, act4_join.class);
+                        startActivity(intent);
+
                         break;
 
                 }

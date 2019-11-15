@@ -135,6 +135,7 @@ public class act4_join extends AppCompatActivity {
     @Override
     protected void onStart(){
         super.onStart();
+        getFirebaseDatabase();
 
         btn_join_join.setOnClickListener(new View.OnClickListener(){
 
