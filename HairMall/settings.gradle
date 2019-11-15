@@ -1,0 +1,2 @@
+include ':app', ':hairmall2'
+rootProject.name='HairMall'

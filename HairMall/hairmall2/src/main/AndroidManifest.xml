@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hairmall2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/hairmall"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/hairmall"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.act10_review">
+
+        </activity>
+        <activity android:name=".ui.act9_privatetalk">
+
+        </activity>
+        <activity android:name=".ui.act8_shopdetail">
+
+        </activity>
+        <activity android:name=".ui.act5_mypage">
+
+        </activity>
+        <activity android:name=".ui.act4_join">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".ui.act3_login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+        </activity>
+        <activity android:name=".ui.act11_stylesearchingm">
+
+        </activity>
+        <activity
+            android:name=".number2"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+    </application>
+
+</manifest>
