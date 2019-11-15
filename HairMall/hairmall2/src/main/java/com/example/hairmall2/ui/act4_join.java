@@ -150,10 +150,15 @@ public class act4_join extends AppCompatActivity {
                     id = edit_join_id.getText().toString();
                     pw = edit_join_pw.getText().toString();
 
-                    //id공백으로 넣으면 db지워지고 오류남
-
 
                     if(!IsExistId()){
+
+                        if (id.equals("")){
+                            Toast.makeText(act4_join.this, "아이디를 입력해주세요.",Toast.LENGTH_LONG).show();
+                            setEditIdBlank();
+                            break;
+                        }
+                        
                         adduser(true);
                         getFirebaseDatabase();
                         setEditBlank();
