@@ -70,7 +70,7 @@ public class act1_mainpage extends Fragment {
         btn_test = root.findViewById(R.id.btn_test);
         text_test = root.findViewById(R.id.text_test);
 
-        id=getActivity().getIntent().getExtras().getString("id"); // 로그인부터 시작 안하면 터짐
+        id=getActivity().getIntent().getExtras().getString("id"); // 로그인부터 시작 안하면 intent에러
         Log.d("DEBUG2",id);
 
         return root;

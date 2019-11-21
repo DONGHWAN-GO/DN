@@ -158,7 +158,7 @@ public class act4_join extends AppCompatActivity {
                             setEditIdBlank();
                             break;
                         }
-                        
+
                         adduser(true);
                         getFirebaseDatabase();
                         setEditBlank();
